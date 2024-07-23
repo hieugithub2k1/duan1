@@ -1,0 +1,222 @@
+*{
+    /* border: 1px solid blue; */
+}
+
+
+.header{
+    background-color: rgba(209, 209, 209,0.5);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.header_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.header_left>*{
+    /* flex: 1; */
+}
+.header_left_logo{
+    /* width: 150px !important; */
+    max-width: 150px;
+    min-width: 100px;
+}
+
+.header_left_menu-ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.header_left_menu-ul a{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text_color);
+}
+
+
+.header_left_menu-ul .svg{
+    width: 15px;
+    transform: translateY(3px);
+}
+.header_left_menu-ul>li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header_left_menu-ul>li:hover svg{
+    fill: var(--orange_color);
+}
+.header_left_menu-ul>li:hover a{
+    color: var(--orange_color);
+}
+
+.header_left_menu-ul .svg.zz{
+    width: 20px;
+}
+
+
+.header_left_search{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    border: 1px solid var(--orange_color);
+    padding: 8px;
+    padding-right: 30px;
+    border-radius: 8px;
+}
+.header_left_search input{
+    width: 100%;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.header_left_search button{
+    width: 20px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.header_left_search button svg{
+    fill: var(--orange_color);
+}
+
+.header_right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.header_right_cart svg{
+    width: 2.5rem;
+    fill: var(--text_color);
+}
+
+.header_right_user_title{
+    color: var(--text_color);
+    font-size: 1.8rem;
+    transform: translateY(-3px);
+    cursor: pointer;
+    position: relative;
+}
+
+.header_right_user_title_sub{
+    --border_color: rgb(182, 180, 180);
+    position: absolute;
+    display: flex;
+    padding: 15px;
+    top: calc(100% + 15px);
+    right: 0;
+    border: 1px solid var(--border_color);
+    border-radius: 5px;
+    gap: 5px;
+    background-color: white;
+    display: none;
+}
+.header_right_user_title_sub::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    top: -11px;
+    right: 15px;
+    transform: rotate(45deg);
+    border-left: 1px solid var(--border_color);
+    border-top: 1px solid var(--border_color);
+}
+.header_right_user_title_sub span{
+    width: 100px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+.header_right_user_title_sub span:first-child{
+    background-color: red;
+}
+.header_right_user_title_sub span:last-child{
+    background-color: #00aeef;
+}
+
+.header_right_user_true{
+    position: relative;
+}
+.header_right_user_true>.img{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translateY(-5px);
+    cursor: pointer;
+    
+}
+
+.header_right_user_true_sub{
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+    top: calc(100% + 10px);
+    border: 1px solid gray;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+}
+.header_right_user_true_sub::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    top: -11px;
+    left: 38%;
+    transform: rotate(45deg);
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.header_right_user_true_sub .img{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translateY(-5px);
+    pointer-events: none;
+}
+.header_right_user_true_sub>div{
+    display: flex;
+    gap: 20px;
+    padding-top: 15px;
+}
+.header_right_user_true_sub>div>div:first-child{
+    /* background-color: aqua; */
+    /* width: 20%; */
+}
+.header_right_user_true_sub .svg{
+    width: 18px;
+}
+
+.header_right_user_true_sub a{
+    color: var(--text_color);
+}
+.header_right_user_true_sub a:hover{
+    color: var(--orange_color);
+}
+
+.header_right_user_true_sub .div6{
+    display: block;
+}

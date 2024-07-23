@@ -1,0 +1,399 @@
+
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+}
+label{
+    margin: 0;
+}
+.btn_ct{
+    --height: 40px;
+    background-color: #007bff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    height: var(--height);
+    line-height: var(--height);
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.btn_ct.btn_red{
+    background-color: #dc3545;
+}
+.btn_ct.btn_yellow{
+    background-color: #e0a800;
+}
+.btn_ct.btn_green{
+    background-color: #28a745;
+}
+.btn_ct:hover{
+    animation: btn .8s infinite;
+}
+@keyframes btn{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+}
+.btn_ct.edit{
+    background-color: green;
+}
+
+.input_ct{
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px gray;
+}
+.input_ct:focus{
+    border: 1px solid rgb(22, 224, 238);
+    box-shadow: 0 0 5px rgb(22, 224, 238);
+
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.class_addclass .form_input{
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(231, 223, 223);
+    display: flex;
+    align-items: center;
+}
+.class_addclass .form_input .left{
+    flex: 1;
+}
+.class_addclass .form_input .left .add{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.class_addclass .form_input .left .des{
+    display: flex;
+    align-items: center;
+}
+.class_addclass .form_input .left .des textarea{
+    flex: 1;
+}
+.class_addclass .form_input label{
+    flex-basis: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 115px;
+    /* background-color: aqua; */
+}
+.class_addclass .form_input input{
+    flex: 1;
+
+}
+.class_addclass .form_input .div_btn{
+    flex-basis: 15%;
+    text-align: center;
+    /* background-color: aqua; */
+}
+.class_addclass .form_input .div_btn button{
+    width: 50%;
+    min-width: 70px;
+}
+
+.class_title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.class_showclass{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+.table_div .row-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.table_div .row-item:nth-child(even){
+    background-color: rgba(231, 231, 231,0.4);
+}
+.table_div .row-item >*{
+    padding: 10px;
+}
+.table_div .row-item:first-child >*{
+    font-weight: bold;
+}
+.table_div .row-item > .col_ct{
+    flex: 1;
+}
+.table_div .row-item> .col_fix{
+    flex-basis: 10%;
+}
+.table_div .row-item> .col1{
+    flex-basis: 5%;
+}
+.class .class_showclass .btn_ct{
+    width: 100%;
+}
+
+.edit_class .div_btn .btn_ct{
+    margin: 5px;
+    min-width: 100px !important;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    inset: 0;
+    /* background-color: #e0a800; */
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+    overflow: hidden;
+    animation: popup .2s linear forwards;
+}
+@keyframes popup{
+    0%{
+        display: block !important;
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.popup .display_popup{
+    max-width: 400px;
+    padding: 30px 20px;
+    background-color: rgb(21, 129, 230);
+    margin: 0 auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.popup .display_popup .popup_top{
+    padding: 15px;
+}
+.popup .display_popup .popup_top .text{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+.popup .display_popup .popup_buttom{
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    gap: 20px;
+}
+.popup .btn_ct{
+    min-width: 70px;
+}
+
+.subject .form_input label{
+    min-width: 150px;
+}
+.subject .form_input input[type=file]{
+    /* border: 2px solid red; */
+    padding: 15px 0;
+}
+
+.table_img{
+    max-width: 100px;
+}
+.table_img img{
+    width: 100%;
+}
+
+.subject .img_old{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.subject .btn_ct{
+    min-width: 100px !important;
+}
+
+.subject .div_img{
+    max-width: 100px;
+}
+.subject .div_img img{
+    width: 100%;
+}
+
+.subject .div_btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chapters .choose{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+.chapters .choose form{
+    display: flex;
+    align-items: end;
+}
+
+.chapters .choose form .value{
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.chapters .choose form .button{
+    min-width: 200px;
+    text-align: center;
+}
+
+.chapters .choose form .value .select{
+    flex: 1;
+}
+.chapters .choose form .value .select select{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+.chapters .choose form .value .select label{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.chapters .choose form .value .select select option{
+    padding: 20px;
+    height: 50px;
+}
+
+.chapters .choose form .button button{
+    min-width: 70px;
+}
+
+/* .chapters .choose .report{
+    padding: 15px ;
+} */
+.chapters .choose .report p{
+    padding-top: 10px;
+    text-align: center;
+    color: red;
+}
+
+.chapters .addchapters form{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.chapters .addchapters form .input{
+    flex: 1;
+}
+.chapters .addchapters form .input label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.chapters .addchapters form .input input{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    width: 100%;
+}
+.chapters .addchapters form .button{
+    min-width: 200px;
+    text-align: center;
+}
+.chapters .listchapters{
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.chapters .listchapters .text{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.chapters> .report{
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.chapters .showinfo{
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.chapters .showinfo .text{
+    font-size: 19px;
+    font-weight: bold;
+}
+.chapters .showinfo .text span{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+.box_waring{
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    backdrop-filter: blur(2px);
+}
+.warning{
+    position: absolute;
+    min-width: 300px;
+    max-width: 500px;
+    
+    background-color: #36973e;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.warning>p{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#check_warning:checked ~ .box_waring{
+    display: none;
+}
+
+.lesson .select{
+    min-width: 250px;
+}

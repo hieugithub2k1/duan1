@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input,button{
+    /* border: none; */
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font: inherit;
+    font-size: 1.6rem;
+    font-family: 'roboto', system-ui;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+:root{
+    --orange_color: #ff9700;
+    --black_color: black;
+    --text_color: #666;
+}
+
+.display_block{
+    display: block !important;
+}
+.display_flex{
+    display: flex !important;
+}
+.display_none{
+    display: none !important;
+}

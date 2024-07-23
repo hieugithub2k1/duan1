@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Connect Plus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/custom_style.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="index.html"><img class="custom_img" src="./img/logo.png"
+                        alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="#"><img class="custom_img" src="./img/logo_mini.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="nav-profile-img">
+                                <img src="./img/user.jpg" alt="image">
+                            </div>
+                            <div class="nav-profile-text">
+                                <p class="mb-1 text-black">Đoàn Duy Vấn</p>
+                            </div>
+                        </a>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item nav-category">Main</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="icon-bg"><i class="fa-solid fa-gauge"></i></span>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= WEB_ROOT ?>/admin/class/showclass">
+                            <span class="icon-bg"><i class="fa-solid fa-house-chimney-user"></i></span>
+                            <span class="menu-title">Lớp</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= WEB_ROOT ?>/admin/subject/showsubject">
+                            <span class="icon-bg"><i class="fa-solid fa-book"></i></span>
+                            <span class="menu-title">Môn học</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                            aria-controls="ui-basic">
+                            <span class="icon-bg"><i class="fa-solid fa-check-double"></i></span>
+                            <span class="menu-title">Trắc nghiệm</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Chương học</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Bài học</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Dạng bài</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Đề thi</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false"
+                            aria-controls="auth">
+                            <span class="icon-bg"><i class="fa-regular fa-circle-play"></i></span>
+                            <span class="menu-title">Khóa học</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="collapse" id="auth">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#"> Chương học </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#"> Bài học </a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-category">More</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <span class="icon-bg"><i class="fa-solid fa-book"></i></span>
+                            <span class="menu-title">Thông tin cá nhân</span>
+                        </a>
+                    </li>
+                    <li class="nav-item documentation-link">
+                        <a class="nav-link"
+                            href="http://www.bootstrapdash.com/demo/connect-plus-free/jquery/documentation/documentation.html"
+                            target="_blank">
+                            <span class="icon-bg">
+                                <i class="mdi mdi-file-document-box menu-icon"></i>
+                            </span>
+                            <span class="menu-title">Documentation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item sidebar-user-actions">
+                        <div class="user-details">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="sidebar-profile-img">
+                                            <img src="./img/user.jpg" alt="image">
+                                        </div>
+                                        <div class="sidebar-profile-text">
+                                            <p class="mb-1">Đoàn Duy Vấn</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="badge badge-danger">3</div> -->
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item sidebar-user-actions">
+                        <div class="sidebar-user-menu">
+                            <a href="#" class="nav-link">
+                                <span class="menu-title">Đăng xuất</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+
+                <div class="content-wrapper">
+                    <!-- my code -->
+                    <section class="chapters lesson">
+                        <div class="choose">
+                            <form action="./test.php" method="post">
+                                <div class="value">
+                                    <div class="select">
+                                        <label for="">Chọn lớp học</label>
+                                        <select name="select" id="select_class" required>
+                                            <option value="" disabled selected hidden>Bạn vui lòng chọn</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <label for="">Chọn môn học</label>
+                                        <select name="select" id="" required>
+                                            <option value="" disabled selected hidden>Bạn vui lòng chọn</option>
+                                            <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                    <div class="select inputchapter">
+                                        <label for="">Chọn Chương học</label>
+                                        <select name="select" id="" required>
+                                            <option value="" disabled selected hidden>Bạn vui lòng chọn</option>
+                                            <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button name="btn" class="btn_ct">Chọn</button>
+                                </div>
+                            </form>
+                            <div class="report">
+                                <p class="text">Bạn vui lòng chọn</p>
+                            </div>
+                        </div>
+
+                        <div class="showinfo">
+                            <p class="text">Trình độ: <span></span></p>
+                            <p class="text">Môn học: <span></span></p>
+                            <p class="text">Chương học: <span></span></p>
+                        </div>
+
+                        <div class="addchapters">
+                            <form action="">
+                                <div class="input">
+                                    <label for="">Thêm bài học</label>
+                                    <input type="text" name="chapter_name" placeholder="Tên chương học">
+                                </div>
+                                <div class="button">
+                                    <button class="btn_ct">Thêm</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="listchapters">
+                            <p class="text">Danh sách</p>
+                            <div class="table_div class_showclass">
+                                <div class="row-item class_showclass_header">
+                                    <div class="col1">STT</div>
+                                    <div class="col_ct col2">Bài học</div>
+                                  
+                                    <div class="col_fix"></div>
+                                    <div class="col_fix"></div>
+                                </div>
+                             
+                                    <div class="row-item class_showclass_item">
+                                        <div class="col1">1</div>
+                                        <div class="col_ct col2">Chuowng 1</div>
+                                        <div class="col_fix"><a class="btn_ct edit" href="">Sửa</a></div>
+                                        <div class="col_fix"><a class="btn_ct" href="" onclick="return checkdel(this.href)">Xóa</a></div>
+                                    </div>
+                               
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /my code -->
+                </div>
+
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="footer-inner-wraper">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
+                                bootstrapdash.com 2020</span>
+                            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a
+                                    href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard
+                                    templates</a> from Bootstrapdash.com</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <div class="popup" id="popupContainer">
+        <div class="display_popup">
+            <div class="popup_top">
+                <p class="text">Bạn chắc chắn muốn xóa</p>
+            </div>
+            <div class="popup_buttom">
+                <div class="popup_btn"><span id="popupOk" class="btn_ct btn_red">OK</span></div>
+                <div class="popup_btn"><span id="popupCancel" class="btn_ct btn_green">Hủy</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vendor.bundle.base.js"></script>
+    <script src="./js/misc.js"></script>
+    <!-- <script src="./js/js_ct.js"></script> -->
+    <script src="./js/admin/RequestAPI.js"></script>
+    <script src="./js/admin/admin.js" ></script>
+    <script>
+
+        // test('tesst thu');
+        
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input,
+button,
+select{
+    /* border: none; */
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font: inherit;
+    font-size: 1.6rem;
+    font-family: 'roboto', system-ui;
+}
+
+
+
+.temp{
+    height: 200px;
+    background-color: aqua;
+}
+.thongbao{
+    color: red;
+}

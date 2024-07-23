@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'ter';
+    src: url('../font/Honk/Honk-Regular-VariableFont_MORFSHLN.ttf') format('truetype');
+    /*Thêm các biến thể của font nếu có*/
+}
+@font-face {
+    font-family: 'te';
+    src: url('../font/Honk/static/Honk-Regular.ttf') format('truetype');
+    /*Thêm các biến thể của font nếu có*/
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../font/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../font/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../font/Roboto/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
